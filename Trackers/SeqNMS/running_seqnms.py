@@ -1,14 +1,14 @@
 #04022021
 #Python script to run seqnms tracker on computer vision fish detections
 
-# 1st Step: Import libraries
+# 1st step: Import libraries
 import pandas as pd
 from pathlib import Path
 import glob
 from seqnms import calculateSEQNMS #seqnms.py must be in the same directory as running_seqnms.py
 
 
-# I've added the apply_seq_nms function above which was missing, it handles the conversion to/from dataframe <-> dict
+# Code from seqnms.py. It handles the conversion to/from data frame <-> dict
 def apply_seq_nms(detections, min_link_length=1, iou_threshold=0.3):
     detections_dict = detections.to_dict("records")
     detections_dict = calculateSEQNMS(
@@ -19,9 +19,9 @@ def apply_seq_nms(detections, min_link_length=1, iou_threshold=0.3):
     detections_processed = pd.DataFrame().from_dict(detections_dict)
     return detections_processed
 
-# read all csvs within folder. Step is ok.
-# make sure no other random CSVs in folder, like exported/processed results. I've made that mistake before!
-files = glob.glob("*.csv")
+# 2nd step: Read all csvs in directory. csv files should be the detections files from the object detection model. 
+# Check that there are no other random csv files in folder, like exported/processed results.
+files = glob.glob("*.csv") #a list of files should appear in python environment
 names = [
     "row_id",
     "model_id",
@@ -47,10 +47,13 @@ names = [
     "common_name",
     "filename",
     "cumul_sum",
-]
-dfs = [pd.read_csv(f, header=0, names=names, sep=",") for f in files]
-detections = dfs
+] #these are the column names that 'should' be exported by the object detection file. Can be modified depending on object detection model used. 
+dfs = [pd.read_csv(f, header=0, names=names, sep=",") for f in files] #code that reads the csv
+detections = dfs #assing new name to dfs -> detections (to be used by seqnms function)
 
+#3rd step: run the seqnms function
+seqnms function
+#the min_link_length and iou_threshold can be changed depending on the sensitivity of the model. Link length controls how many links (detections) are required to create a detection chain #(i.e. tracker). IOU Threshold controls the overlap between detection 1 and detection 2 of the same object. Default values are as shown in this code. 
 detections_processed = []
 for df in detections:
     processed = apply_seq_nms(detections=df, min_link_length=1, iou_threshold=0.3)
@@ -58,10 +61,11 @@ for df in detections:
     # detections_processed = detections_processed.append(processed)
     detections_processed.append(processed)
 
-# turn all separate dataframes into 1 dataframe
+# This will turn all separate dataframes into 1 dataframe (if you have multiple videos processed)
 detections_all = pd.concat(detections_processed)
 
-output_path = "~/OneDrive - Griffith University/PhD/MBEEC/seqnms_processed/detections_1_0.3_nofilter.csv"
+#Export final csv to output_path
+output_path = "~/Downloads/detections_1_0.3_nofilter.csv" #change the directory here
 detections_all.to_csv(output_path, index=False)
 
 print(f"Saved to {output_path}")
