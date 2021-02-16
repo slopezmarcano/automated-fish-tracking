@@ -28,8 +28,8 @@ We used six submerged action cameras (1080p Haldex Sports Action Cam HD) deploye
 
 We used software developed at Griffith University for data preparation and annotation tasks FishID <https://globalwetlandsproject.org/tools/fishid/>
 
-##Movement dataset
-We collected the fish movement data by submerging two sets of three action cameras (1080p Haldex Sports Action Cam HD) for one hour during a morning flood tide in October 2019. We used this dataset to evaluate the fish detection model and test the OT architectures. We placed the sets of cameras parallel to each other and separated by 20 m. Within each set, the cameras faced the fish corridor and placed at a 90 angle from the seafloor, and were separated by ~ 3 m. The distance between the cameras and between the sets ensured non-overlapping field of views. Set 1 cameras faced north and set 2 faced south. We placed the cameras in a continuous line starting at the harbour entrance and ending at the border of the seagrass meadow. 
+## Movement dataset
+We collected the fish movement data by submerging two sets of three action cameras (1080p Haldex Sports Action Cam HD) for one hour during a morning flood tide in October 2019. We used this dataset to evaluate the fish detection model and test the OT architectures. We placed the sets of cameras parallel to each other and separated by 20 m. Within each set, the cameras faced the fish corridor and placed at a 90 degree angle from the seafloor, and were separated by ~ 3 m. The distance between the cameras and between the sets ensured non-overlapping field of views. Set 1 cameras faced north and set 2 faced south. We placed the cameras in a continuous line starting at the harbour entrance and ending at the border of the seagrass meadow. 
 
 
 
