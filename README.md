@@ -119,4 +119,4 @@ We have provided a sample output of our CV pipeline for the three trackers (MOSS
 
 The R code is divided into three sections: 1) Libraries 2) MOSSE and SiamMask and 3) SEQ-NMS. The summaries are done with common data wrangling packages (tidyverse and sqldf). An animation of the tracking process is provided for SeqNMS -- view [here](https://github.com/slopezmarcano/automated-fish-tracking/blob/main/Movement%20dataset/Sample%20data/SEQNMS/fish_movement_animation_seqnms.gif)
 
-![Alt Text](https://github.com/slopezmarcano/automated-fish-tracking/blob/main/Movement%20dataset/Sample%20data/SEQNMS/fish_movement_animation_seqnms.gif)
+
