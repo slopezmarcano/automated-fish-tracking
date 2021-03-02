@@ -1,6 +1,6 @@
 # automated-fish-tracking
 
-**How to cite**: 
+**How to cite**: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4571705.svg)](https://doi.org/10.5281/zenodo.4571705)
 
 **Short summary**: A toolbox for monitoring fish movement in their environment. This repository contains all the training data, test and movement datasets required to reproduce the study: [Automated detection and tracking of fish for ecology](insert link to paper here].
 
