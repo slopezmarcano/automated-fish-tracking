@@ -1,5 +1,7 @@
 # automated-fish-tracking
 
+**How to cite**: 
+
 **Short summary**: A toolbox for monitoring fish movement in their environment. This repository contains all the training data, test and movement datasets required to reproduce the study: [Automated detection and tracking of fish for ecology](insert link to paper here].
 
 ![Alt Text](https://github.com/slopezmarcano/automated-fish-tracking/blob/main/Movement%20dataset/Sample%20data/sample_video_final.gif)
@@ -33,7 +35,7 @@ We used software developed at Griffith University for data preparation and annot
 
 ## Movement dataset
 
-The movement dataset was used to evaluate the OD model and OT architectures. We collected the movement dataset in the same location as the training dataset, but during October 2019. We placed the cameras parallel to each other and separated by 20 m. The cameras faced the fish corridor and placed at a 90 degree angle from the seafloor, and were separated by \~ 3 m.
+The movement dataset was used to evaluate the OD model and OT architectures. We collected the movement dataset in the same location as the training dataset, but during October 2019. We placed the cameras parallel to each other and separated by 20 m. The cameras faced the fish corridor, pointing horizontally and parallel with the seafloor, and were separated by \~ 3 m.
 
 The distance between the cameras and between the sets ensured non-overlapping field of views. We placed the cameras in a continuous line starting at the harbour entrance and ending at the border of the seagrass meadow.
 
