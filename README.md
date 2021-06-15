@@ -2,7 +2,7 @@
 
 **How to cite**: [![DOI](https://zenodo.org/badge/328877240.svg)](https://zenodo.org/badge/latestdoi/328877240)
 
-**Short summary**: A toolbox for monitoring fish movement in their environment. This repository contains all the training data, test and movement datasets required to reproduce the study: [Automated detection and tracking of fish for ecology](insert link to paper here].
+**Short summary**: A toolbox for monitoring fish movement in their environment. This repository contains all the training data, test and movement datasets required to reproduce the study: [Automated detection and tracking of fish for ecology](https://doi.org/10.1002/ece3.7656).
 
 ![Alt Text](https://github.com/slopezmarcano/automated-fish-tracking/blob/main/Movement%20dataset/Sample%20data/sample_video_final.gif)
 
