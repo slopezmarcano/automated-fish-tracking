@@ -52,7 +52,7 @@ dfs = [pd.read_csv(f, header=0, names=names, sep=",") for f in files] #code that
 detections = dfs #assing new name to dfs -> detections (to be used by seqnms function)
 
 #3rd step: run the seqnms function
-seqnms function
+#seqnms function
 #the min_link_length and iou_threshold can be changed depending on the sensitivity of the model. Link length controls how many links (detections) are required to create a detection chain #(i.e. tracker). IOU Threshold controls the overlap between detection 1 and detection 2 of the same object. Default values are as shown in this code. 
 detections_processed = []
 for df in detections:
