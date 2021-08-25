@@ -1,0 +1,35 @@
+# YAML 1.2
+---
+abstract: |
+    "Animal movement studies are conducted to monitor ecosystem health, understand ecological dynamics and address management and conservation questions. In marine environments, traditional sampling and monitoring methods to measure animal movement are invasive, labour intensive, costly, and measuring movement of many individuals is challenging. Automated detection and tracking of small-scale movements of many animals through cameras are possible. However, automated techniques are largely untested in field conditions, and this is hampering applications to ecological questions.
+    Here, we aimed to test the ability of computer vision algorithms to track small-scale movement of many individuals in videos. We apply the method to track fish movement in the field and characterize movement behaviour. First, we automated the detection of a common fisheries species (yellowfin bream, Acanthopagrus australis) from underwater videos of individuals swimming along a known movement corridor. We then tracked fish movement with three types of tracking algorithms (MOSSE, Seq-NMS and SiamMask), and evaluated their accuracy at characterizing movement.
+    This repository includes all the object detection training images and annotations, movement dataset annotations, images and videos and the tracking and data wrangling scripts. "
+authors: 
+  -
+    family-names: "Lopez-Marcano"
+    given-names: Sebastian
+  -
+    family-names: Jinks
+    given-names: Eric
+  -
+    family-names: Buelow
+    given-names: Christina
+  -
+    family-names: Brown
+    given-names: Christopher
+  -
+    family-names: Wang
+    given-names: Dadong
+  -
+    family-names: Kusy
+    given-names: Branislav
+  -
+    family-names: Ditria
+    given-names: Ellen
+  -
+    family-names: Connolly
+    given-names: Rod
+cff-version: "1.1.0"
+doi: "10.1002/ece3.7656"
+message: "If you use this software, please cite it using these metadata."
+...
